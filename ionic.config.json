@@ -1,0 +1,7 @@
+{
+  "name": "gestionra",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
