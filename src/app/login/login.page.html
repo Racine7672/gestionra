@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-back-button slot="start"></ion-back-button>
+        <ion-title>Login Page</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+
+    <ion-button routerLink="/profil">profil </ion-button>
+    <br>
+
+
+    <ion-label>veuillez renseigner les champs.</ion-label>
+    <form #donnee="ngForm" (ngSubmit)="recevoirDonnee(donnee)">
+        <ion-input type="text" name="connexion" ngModel placeholder="email"> </ion-input>
+        <ion-input type="password" name="password" ngModel placeholder="mot de passe"></ion-input>
+        <ion-button type="submit" color="primary" expand="full">connexion </ion-button>
+        <ion-button type="reset" color="secondary" expand="full">annuler </ion-button>
+    </form>
+    <ion-button>
+        deconnexion
+    </ion-button>
+
+
+    <ion-button routerLink="/mot-de-pase-oublier" expand="full">mot de pase oublier </ion-button>
+
+
+</ion-content>

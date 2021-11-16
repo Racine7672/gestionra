@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+
+<ion-content>
+  <ion-label>veuillez renseigner les champs.</ion-label>
+  <form #donnee="ngForm" (ngSubmit)="recevoirDonnee(donnee)">
+    <ion-input type="text" name="prenom" ngModel placeholder="prenom"> </ion-input>
+    <ion-input type="text" name="nom" ngModel placeholder="nom"> </ion-input>
+    <ion-input type="number" name="telephone" ngModel placeholder="telephone"></ion-input>
+    <ion-input type="text" name="email" ngModel placeholder="email"> </ion-input>
+    <ion-input type="password" name="mot de passe" ngModel placeholder="mot de passe"> </ion-input>
+
+    <ion-button type="submit" color="primary" expand="full">enregistrer </ion-button>
+    <ion-button type="reset" color="secondary" expand="full">annuler </ion-button>
+  </form>
+</ion-content>
